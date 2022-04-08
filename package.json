@@ -11,6 +11,7 @@
     "./playground-lit.js": "./dist/src/playground-lit.js"
   },
   "scripts": {
+    "prepare": "husky install",
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build": "tsc && npm run analyze -- --exclude dist",
